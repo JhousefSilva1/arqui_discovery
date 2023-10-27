@@ -1,6 +1,6 @@
 
 server:
-  port: 8714
+  port: ${PORT:8714}
 spring:
   application:
     name: eureka-server
@@ -9,4 +9,4 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-        defaultZone: http://localhost:8714/eureka/
+        defaultZone: ${EUREKA_URL:http://localhost:8714/eureka/}
